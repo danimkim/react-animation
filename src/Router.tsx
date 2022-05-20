@@ -13,7 +13,7 @@ import Content from './element/Content';
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="process.env.PUBLIC_URL">
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/:name" element={<Content />}></Route>
